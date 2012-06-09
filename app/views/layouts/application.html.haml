@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %title
+    = render 'stylesheets'
+    = render 'javascripts'
+    = csrf_meta_tags
+  %body
+    = yield
