@@ -4,6 +4,7 @@
     %title
     = render 'layouts/stylesheets'
     = render 'layouts/javascripts'
+    = javascript_include_tag yield(:script)
     = csrf_meta_tags
   %body
     %h1 Fun with Canvas

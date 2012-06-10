@@ -1,7 +1,7 @@
-= javascript_include_tag 'grid.js'
+= provide(:script, 'grid.js')
 
 %p
   = link_to 'Back', root_path
 
-#grid
+.grid
   %canvas#grid{width: 600, height: 400}
