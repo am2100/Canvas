@@ -2,8 +2,10 @@
 %html
   %head
     %title
-    = render 'stylesheets'
-    = render 'javascripts'
+    = render 'layouts/stylesheets'
+    = render 'layouts/javascripts'
     = csrf_meta_tags
   %body
+    %h1 Fun with Canvas
+
     = yield
