@@ -1,0 +1,12 @@
+%p
+  = link_to 'Back', root_path
+%p
+  %code
+    %pre
+      = preserve do
+        :escaped
+          if(canvas.getContext){
+            // do drawing
+          }else{
+            alert('Your browser does not support Canvas.')
+          }

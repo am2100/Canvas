@@ -4,4 +4,7 @@ class PublicPagesController < ApplicationController
 
   def grid
   end
+
+  def support_filter
+  end
 end

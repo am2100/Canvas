@@ -1,19 +1,21 @@
 // A simple grid exploring the Canvas element
 window.onload = function(){
     var canvas = document.getElementById("grid");
-    var context = canvas.getContext("2d");
 
-    drawGrid();
-    drawHorizontalArrow();
-    drawVerticalArrow();
-//    context.font = "bold 12px serif";
-//    context.fillText = ("x", 5, 5);
-//    context.fillText = ("y", 58, 165);
-    drawText();
-//  context.beginPath();
-//  context.moveTo(10,9.5);
-//  context.lineTo(100,10);
-//  context.stroke();
+    if(canvas.getContext){
+
+	var context = canvas.getContext("2d");
+
+	drawGrid();
+	drawHorizontalArrow();
+	drawVerticalArrow();
+	drawText();
+
+    }else{
+
+	alert('Your browser does not support canvas.')
+
+    }
 
     function drawGrid(){
 

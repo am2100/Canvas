@@ -12,7 +12,7 @@ Canvas::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   match 'grid' => 'public_pages#grid', as: :grid
-
+  match 'support-filter' => 'public_pages#support_filter', as: :support_filter
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
