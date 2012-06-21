@@ -7,4 +7,7 @@ class PublicPagesController < ApplicationController
 
   def support_filter
   end
+
+  def radians
+  end
 end

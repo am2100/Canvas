@@ -1,0 +1,17 @@
+= provide(:script, 'radians.js')
+
+%p
+  = link_to 'Back', root_path
+
+.grid
+  %canvas#radians{width: 600, height: 400}
+.notes
+  %h3 Notes
+  %p
+    A Radian: The angle made by wrapping the radius of a circle around it's circumference.
+  %ul
+    %li
+      %h4 Positions around the circle
+      %ul
+        %li
+          3 O'Clock: 0 * Math.PI/4;

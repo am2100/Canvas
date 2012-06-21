@@ -14,7 +14,7 @@ body {
 }
   
 canvas {
-  background: #eee;
+//  background: #eee;
   border: 1px solid #ddd;
 }
 
@@ -40,4 +40,11 @@ ul {
 p {
   font-size: 1.1em;
   margin-bottom: 1em;
+}
+
+.notes {
+  left: 640px;
+  position: absolute;
+  top: 40px;
+  width: 300px;
 }
