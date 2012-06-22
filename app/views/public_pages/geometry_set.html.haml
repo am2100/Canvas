@@ -1,0 +1,24 @@
+= provide(:script, 'geometry_set.js')
+= provide(:script_02, 'geometry_set_dev.js')
+
+%p
+  = link_to 'Back', root_path
+
+.grid
+  %canvas#graph_paper{width: 600, height: 400}
+.notes
+  %h3 Notes
+  %p
+    Geometry Set development.
+  %ul
+    %li
+      drawGrid(ctx, canvas);
+    %li
+      drawAxes(ctx, canvas, x, y);
+    %li
+      drawXAxis(context, canvas, y);
+    %li
+      drawYAxis(context, canvas, x);
+    %li
+      drawPoint(ctx, x, y);
+

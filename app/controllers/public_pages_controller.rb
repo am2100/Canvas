@@ -10,4 +10,7 @@ class PublicPagesController < ApplicationController
 
   def radians
   end
+
+  def geometry_set
+  end
 end
