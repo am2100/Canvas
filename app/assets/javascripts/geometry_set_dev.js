@@ -13,7 +13,17 @@ window.onload = function () {
     drawGrid(ctx, canvas);
     drawAxes(ctx, canvas, xOrigin, yOrigin);
 
-    drawPoint(ctx, xOrigin, yOrigin);
+    var Px = 10;
+    var Py = 10;
+
+    var Qx = 100;
+    var Qy = 250;
+
+    drawPoint(ctx, Px, Py);
+    drawPointLabel(ctx, Qx, Qy);
+    drawPoint(ctx, Qx, Qy);
+    drawLine(ctx, Px, Py, Qx, Qy);
+
 //    drawTrace(ctx);
 //    draw1Radian(ctx);
 

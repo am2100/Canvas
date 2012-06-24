@@ -10,6 +10,7 @@ var gridFgCol = '#222';
 var axisCol = '#444';
 var traceCol = '#006600';
 var penCol = '#00FF00';
+var labelCol = 'gold';
 
 function drawGrid(context, canvas) {
 
@@ -80,6 +81,24 @@ function drawTrace(context) {
 
 }
 
+function drawPointLabel(context, Px, Py, labelText){
+
+// d = compass direction: N, S, E, W
+// l = length of label line
+
+    drawLine(context, Px, Py, Px, Py - 10, labelCol);
+}
+
+function drawLine(context, Ax, Ay, Bx, By, col) {
+
+  context.beginPath();
+  context.moveTo(Ax + 0.5, Ay + 0.5);
+  context.lineTo(Bx + 0.5, By + 0.5);
+  context.lineWidth = 0.5;
+  context.strokeStyle = col || penCol;
+  context.stroke();
+}
+
 function drawPoint(context, x, y) {
 
   var radius = 1;
@@ -93,6 +112,7 @@ function drawPoint(context, x, y) {
   context.fillStyle = penCol;
   context.fill();
 }
+
 
 function drawAxes(context, canvas, x, y) {
 
@@ -119,3 +139,4 @@ function drawYAxis(context, canvas, x) {
   context.stokeStyle = axisCol;
   context.stroke();
 }
+
