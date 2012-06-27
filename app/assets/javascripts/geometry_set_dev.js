@@ -3,7 +3,7 @@ window.onload = function () {
   var canvas = document.getElementById("graph_paper");
 
   var xOrigin = canvas.width / 2;
-  var yOrigin = canvas.height / 2;
+  var yOrigin = (canvas.height / 4) * 3;
 
 
   if (canvas.getContext) {
@@ -13,17 +13,22 @@ window.onload = function () {
     drawGrid(ctx, canvas);
     drawAxes(ctx, canvas, xOrigin, yOrigin);
 
-    var Px = 10;
-    var Py = 10;
+    var Ax = xOrigin + 10;
+    var Ay = yOrigin - 10;
 
-    var Qx = 100;
-    var Qy = 250;
+    var Bx = xOrigin + 210;
+    var By = yOrigin - 10;
 
-    drawPoint(ctx, Px, Py);
-    drawPointLabel(ctx, Qx, Qy);
-    drawPoint(ctx, Qx, Qy);
-    drawLine(ctx, Px, Py, Qx, Qy);
+    var Cx = xOrigin + 10;
+    var Cy = yOrigin - 110;
 
+    drawPoint(ctx, Ax, Ay);
+    drawPoint(ctx, Bx, By);
+    drawPoint(ctx, Cx, Cy);
+    drawLine(ctx, Ax, Ay, Bx, By);
+    drawLine(ctx, Bx, By, Cx, Cy);
+    drawLine(ctx, Cx, Cy, Ax, Ay);
+    drawRect(ctx, Ax, Ay - 20, 20, 20);
 //    drawTrace(ctx);
 //    draw1Radian(ctx);
 

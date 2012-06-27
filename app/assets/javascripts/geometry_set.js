@@ -140,3 +140,11 @@ function drawYAxis(context, canvas, x) {
   context.stroke();
 }
 
+function drawRect(context, x1, y1, h, w) {
+
+  context.beginPath();
+  context.rect(x1 + 0.5, y1 + 0.5, w, h);
+
+  context.strokeStyle = penCol;
+  context.stroke();
+}
