@@ -1,3 +1,4 @@
+
 !!!
 %html
   %head
@@ -6,6 +7,7 @@
     = render 'layouts/javascripts'
     = javascript_include_tag yield(:script)
     = javascript_include_tag yield(:script_02) if defined? :script_02
+    = javascript_include_tag yield(:script_03) if defined? :script_03
     = csrf_meta_tags
   %body
     %h1 Fun with Canvas

@@ -148,3 +148,19 @@ function drawRect(context, x1, y1, h, w) {
   context.strokeStyle = penCol;
   context.stroke();
 }
+
+function radians_to_degrees(r){
+
+  // degrees = radians * 180/pi
+  d = r * (180/Math.PI);
+  return d;
+
+}
+
+function degrees_to_radians(d) {
+
+  // radians = degrees * pi/180
+  r = d * (Math.PI/180);
+  return r;
+
+}
