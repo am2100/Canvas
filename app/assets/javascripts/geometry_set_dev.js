@@ -1,5 +1,8 @@
+
 // Developing a set of functions for drawing graphs and exploring geometry.
+
 window.onload = function () {
+
   var canvas = document.getElementById("graph_paper");
 
   var xOrigin = canvas.width / 2;
