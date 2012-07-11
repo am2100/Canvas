@@ -4,11 +4,16 @@
 // sin-1(O/H) = x°   // asin(O/H) = 30
 
 function sine_angle(O, H){
- //  MATH.asin
+
+  return MATH.asin(O/H);
 
 }
 
-function sine_O(angle, H) {}
+function sine_O(angle, H) {
+
+    return H * Math.sin(angle);
+
+}
 
 function sine_H(angle, O) {}
 

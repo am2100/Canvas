@@ -164,3 +164,17 @@ function degrees_to_radians(d) {
   return r;
 
 }
+
+function sine_angle(O, H){
+
+  return Math.asin(O/H);
+
+}
+
+function sine_O(angle, H) {
+
+    return H * Math.sin(angle);
+
+}
+
+function sine_H(angle, O) {}
