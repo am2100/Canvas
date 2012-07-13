@@ -81,6 +81,22 @@ function drawTrace(context) {
 
 }
 
+function drawCircle(ctx, x, y, r) {
+
+  var radius = r;
+  var startAngle = 0; // 1 * Math.PI;
+  var endAngle = 2 * Math.PI;
+  var counterClockwise = false;
+
+  ctx.beginPath();
+  ctx.arc(x + 0.5, y + 0.5, radius, startAngle, endAngle, counterClockwise);
+
+  ctx.lineWidth = 1;
+  ctx.strokeStyle = traceCol;
+  ctx.stroke();
+
+}
+
 function drawPointLabel(context, Px, Py, labelText){
 
 // d = compass direction: N, S, E, W

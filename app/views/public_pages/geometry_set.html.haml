@@ -1,3 +1,4 @@
+# encoding: UTF-8
 = provide(:script, 'geometry_set.js')
 = provide(:script_02, 'geometry_set_dev.js')
 
@@ -7,10 +8,18 @@
 .grid
   %canvas#graph_paper{width: 600, height: 400}
 .notes
-  .debug_panel
+  -#.debug_panel
   %h3 Notes
-  %p
-    Geometry Set development.
+  %h4 Formulae
+  %ul
+    %li sin(x) = O/H
+    %li O = H * sin(x)
+    %li H = sin(x) / O
+    %li asin(O/H) = x
+    %li radians = degrees * pi/180
+    %li degrees = radians * 180/pi
+  %h4
+    Geometry Set functions
   %ul
     %li
       drawGrid(ctx, canvas);
@@ -24,7 +33,9 @@
       drawPoint(ctx, x, y);
     %li
       drawRect(ctx, x, y, h, w);
-  %p
+    %li
+      drawCircle(ctx, x, y, r);
+  %h4
     Trigonometry functions
   %ul
     %li
